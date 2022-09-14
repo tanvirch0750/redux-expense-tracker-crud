@@ -54,7 +54,7 @@ const transactionSlice = createSlice({
     editActive: (state, action) => {
       state.editing = action.payload;
     },
-    editInactive: (state, action) => {
+    editInactive: (state) => {
       state.editing = {};
     },
   },
@@ -115,12 +115,11 @@ const transactionSlice = createSlice({
         state.isError = false;
         state.isLoading = true;
       })
-      .addCase(removeTransaction, (state, action) => {
+      .addCase(removeTransaction.fulfilled, (state, action) => {
         state.isError = false;
         state.isLoading = false;
-
         state.transactions = state.transactions.filter(
-          (t) => t.id !== action.payload
+          (t) => t.id !== action.meta.arg
         );
       })
       .addCase(removeTransaction.rejected, (state, action) => {

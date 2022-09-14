@@ -3,20 +3,8 @@
     {
       "name": "Tution",
       "type": "income",
-      "amount": 3000,
+      "amount": "30000",
       "id": 3
-    },
-    {
-      "name": "Rent",
-      "type": "expense",
-      "amount": "3000",
-      "id": 4
-    },
-    {
-      "name": "Sell Laptop",
-      "type": "income",
-      "amount": 20000,
-      "id": 5
     }
   ]
 }
