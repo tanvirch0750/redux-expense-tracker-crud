@@ -9,8 +9,14 @@
     {
       "name": "Rent",
       "type": "expense",
-      "amount": 2000,
+      "amount": "3000",
       "id": 4
+    },
+    {
+      "name": "Sell Laptop",
+      "type": "income",
+      "amount": 20000,
+      "id": 5
     }
   ]
 }
