@@ -11,11 +11,11 @@ export const addTransactions = async (data) => {
 };
 
 export const editTransactions = async (id, data) => {
-  const response = await axios.get(`/transactions/${id}`, data);
+  const response = await axios.put(`/transactions/${id}`, data);
   return response.data;
 };
 
 export const deleteTransactions = async (id) => {
-  const response = await axios.get(`/transactions/${id}`);
+  const response = await axios.delete(`/transactions/${id}`);
   return response.data;
 };
