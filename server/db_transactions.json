@@ -3,7 +3,19 @@
     {
       "name": "Tution",
       "type": "income",
-      "amount": "30000",
+      "amount": 2000,
+      "id": 1
+    },
+    {
+      "name": "salary",
+      "type": "income",
+      "amount": 30000,
+      "id": 2
+    },
+    {
+      "name": "Rent",
+      "type": "expense",
+      "amount": 5000,
       "id": 3
     }
   ]
